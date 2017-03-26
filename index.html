@@ -39,34 +39,24 @@
                 padding: 0px;
                 margin: 0 0;
             }
-
-            #headerline {
-                height: 100px;
-                width:1284px;
-                border-style:solid;
-                background-color: white;
-                color: white;
-                clear:both;
-                overflow:hidden;
-                position:top,center;
-                clear:both;
-            }
         </style>
     </head>
     <body>
-        <div id="headerline"></div>
         <div id="leftnav"></div>
         <div id="rightnav"></div><br><br>
         <h1 align="center">ROS XPRESS</h1>
-        <p align="center">ROS XPRESS DMV Registration Service</p><br>
+        <p align="center">DMV Registration Service</p><br>
         <div style="text-align:center;">
             <form action="mailto:porsche@rosxpress.com">
-                <button onclick="clickFunction()">Click here to send an e-mail</button>
+                <button>Click here to send an e-mail</button>
             </form>
         </div>
+        <p align="center" id="clock"></p>
         <script>
-            function clickFunction() {
-                window.alert("Sending an email to: porsche@rosxpress.com\n Click 'OK' to continue.");
+            var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+                var d = new Date();
+                document.getElementById("clock").innerHTML = d.toLocaleTimeString();
             }
         </script>
     </body>

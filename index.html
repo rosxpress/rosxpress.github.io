@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>ROSXPRESS</title>
-<style>
-button {
-      font-family: verdana;
-      font-size: 14px;
-    }
-    p {
-      font-family: verdana;
-      font-size: 18px;
-    }
-    h1 {
-      font-family: verdana;
-      font-size: 40px;
-      color: white;
-    }
-    h2 {
-      font-family: verdana;
-      font-size: 20px;
-      color: white;
-    }
-    body {
-      background-color: grey;
-    }
-</style>
-</head>
-<body>
-</body>
+    <head>
+        <title>ROS XPRESS</title>
+        <style>
+            button {
+                font-family: verdana;
+                font-size: 14px;
+            }
+            p {
+                font-family: verdana;
+                font-size: 18px;
+            }
+            h1 {
+                font-family: verdana;
+                font-size: 40px;
+                color: black;
+            }
+            h2 {
+                font-family: verdana;
+                font-size: 20px;
+                color: black;
+            }
+            body {
+                background-color: lightgrey;
+            }
+            #rightnav {
+                background-color: white;
+                width: 220px;
+                height: 1700px;
+                float: right;
+                margin: 0 0;
+            }
+            #leftnav {
+                background-color: white;
+                width: 220px;
+                height: 1700px;
+                float: left;
+                padding: 0px;
+                margin: 0 0;
+            }
+
+            #headerline {
+                height: 100px;
+                width:1284px;
+                border-style:solid;
+                background-color: white;
+                color: white;
+                clear:both;
+                overflow:hidden;
+                position:top,center;
+                clear:both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="headerline"></div>
+        <div id="leftnav"></div>
+        <div id="rightnav"></div><br><br>
+        <h1 align="center">ROS XPRESS</h1>
+        <p align="center">ROS XPRESS DMV Registration Service</p><br>
+        <div style="text-align:center;">
+            <form action="mailto:porsche@rosxpress.com">
+                <button onclick="clickFunction()">Click here to send an e-mail</button>
+            </form>
+        </div>
+        <script>
+            function clickFunction() {
+                window.alert("Sending an email to: porsche@rosxpress.com\n Click 'OK' to continue.");
+            }
+        </script>
+    </body>
 </html>
